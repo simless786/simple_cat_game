@@ -42,7 +42,7 @@
 
 ## 🔗 온라인 플레이
 
-👉 [게임 바로가기](https://simless786.github.io/cat-letter-game/](https://simless786.github.io/simple_cat_game/)  
+👉 [게임 바로가기](https://simless786.github.io/simple_cat_game/)  
 
 ---
 
