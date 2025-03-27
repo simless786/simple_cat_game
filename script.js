@@ -45,6 +45,13 @@ function showScene() {
       <button onclick="selectChoice(2)">아이 앞에 털실을 내려놓는다.</button>
       <button onclick="selectChoice(3)">그네 뒤에 앉아 함께 움직인다.</button>
     `;
+  } else if (day === 4) {
+    story.innerText = `${catName}는 오늘 마을 입구의 오래된 우체통 옆에 앉은 노신사를 찾았다. 그는 조용히 무언가를 손에 쥐고 있었다.`;
+    choices.innerHTML = `
+      <button onclick="selectChoice(1)">그의 무릎 위에 올라간다.</button>
+      <button onclick="selectChoice(2)">우체통 아래에서 몸을 비빈다.</button>
+      <button onclick="selectChoice(3)">그 앞에 살며시 앉아 조용히 바라본다.</button>
+    `;
   } else {
     showEnding();
   }
@@ -60,7 +67,11 @@ function selectChoice(option) {
   } else if (day === 3) {
     if (option === 1) mood += 2;
     else if (option === 2) mood += 1;
+  } else if (day === 4) {
+    if (option === 1) mood += 2;
+    else if (option === 2) mood += 1;
   }
+
   day++;
   showScene();
 }
