@@ -1,0 +1,8 @@
+# macOS에서 생성되는 시스템 파일
+.DS_Store
+
+# Node.js 관련 모듈 
+node_modules/
+
+# 환경 설정 파일
+.env
