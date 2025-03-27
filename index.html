@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>고양이 편지</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="introScreen">
+      <p>이 마을에는 모두가 사랑하는 고양이가 있습니다.<br>
+      오늘 그 고양이가 당신의 하루에 찾아옵니다.</p>
+      <p>고양이의 이름을 지어주세요.</p>
+      <input type="text" id="nameInput" maxlength="6" placeholder="이름 입력 (최대 6자)" />
+      <br>
+      <button onclick="startGame()">시작하기</button>
+    </div>
+
+    <div id="tutorialScreen" style="display: none">
+      <p id="tutorialText"></p>
+      <button onclick="startDay()">하루를 시작해요</button>
+    </div>
+
+    <div id="gameScreen" style="display: none">
+      <p id="storyText"></p>
+      <div id="choices"></div>
+    </div>
+
+    <div id="endingScreen" style="display: none">
+      <p id="endingText"></p>
+      <button onclick="location.reload()">다시 시작하기</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
